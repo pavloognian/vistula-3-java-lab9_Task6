@@ -25,14 +25,13 @@ public class task6 {
                 String result="";
                 int c=0;
                 for (int i=0;i<items.length;i++){
-                    if(items[i]==""){c++; continue;}
+                    if(items[i].equals("")){c++; continue;}
                     if(c<3){
-                        if(i==0) result = result+"An abbreviated bank number: " + items[i]+";\n";
-                        else if(i==3) result = result+"The name of the bank: " + items[i]+" ";
-                        else result+=items[i]+" ";
+                        if(i==0)continue;
+                        result+=items[i]+" ";
                     }
                 }
-                System.out.println(result);
+                System.out.println("The name of the bank: "+result);
                 break;
             }
             //116  	Bank Millennium Sp��ka Akcyjna
